@@ -1,0 +1,272 @@
+/*body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  overflow-y: scroll;
+  background-color: rgb(36, 35, 35); 
+}
+
+.wrapper {
+  width: 300px;
+  margin: auto;
+  padding-top: 50vh; 
+  padding-bottom: 50vh; 
+}
+
+.outer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card .content {
+  text-align: center;
+}
+
+.card .content .name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card .content p {
+  font-size: 14px;
+  color: gray;
+}
+
+.card a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card.in-center {
+  transform: scale(1.2);
+  filter: none;
+  z-index: 1;
+}
+
+.card:not(.in-center) {
+  filter: blur(2px);
+  transform: scale(0.9);
+}
+*/
+
+
+
+
+
+/*
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  overflow: hidden; 
+  background-color: rgb(45, 43, 43);
+}
+
+.wrapper {
+  width: 500px;
+  height: 100vh; 
+  padding: 20px;
+  overflow-y: scroll;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  scroll-behavior: smooth; 
+
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
+}
+
+/*
+.wrapper::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+/*
+.outer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card .content {
+  text-align: center;
+}
+
+.card .content .name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card .content p {
+  font-size: 14px;
+  color: gray;
+}
+
+.card a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card.in-center {
+  transform: scale(1.1);
+  filter: none;
+  z-index: 1;
+}
+
+.card:not(.in-center) {
+  filter: blur(2px);
+  transform: scale(0.9);
+}
+  
+*/
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+html{
+  background-color: rgb(52, 50, 50);
+}
+
+.content .img{
+  background-color: aqua;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;  
+}
+
+.img img {
+  width: 100%;   /* Make image take up full width */
+  height: 100%;  /* Make image take up full height */
+  object-fit: cover; /* Ensures the image covers the entire container while maintaining aspect ratio */
+  object-position: center; /* Keeps the image centered within the container */
+}
+
+
+.card .content {
+  text-align: center;
+  display: flex
+;
+  gap: 21px;
+}
+
+.wrapper {
+  width: 500px;
+  height: 100vh;
+  padding: 20px;
+  overflow-y: scroll;
+  justify-self: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.outer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transform-origin: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  scroll-snap-align: center; 
+}
+
+.card .content {
+  text-align: center;
+}
+
+.card .content .name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card .content p {
+  font-size: 14px;
+  color: gray;
+}
+
+.card a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card a i {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.card.in-center {
+  transform: scale(1.1);
+  filter: none;
+  z-index: 1;
+}
+
+.card:not(.in-center) {
+  filter: blur(2px);
+  transform: scale(0.9);
+}
